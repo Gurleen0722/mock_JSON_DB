@@ -11,7 +11,7 @@ app.set('views', './views');
 //Middleware 
 app.use((req, res, next)=>{
 const time = new Date();
-console.log(time);
+console.log(time, req.url, req.method);
 
 next();
 });
