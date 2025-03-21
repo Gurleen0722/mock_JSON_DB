@@ -8,6 +8,8 @@ const PORT = process.env.PORT;
 app.set('view engine','ejs');
 app.set('views', './views');
 
+//Middlware the view engine 
+app.use(express.static('public'));
 
 
 app.listen(PORT, ()=>{
